@@ -28,9 +28,9 @@ double setPoint   = 0.0;   // target angle (upright)
 double inputAngle = 0.0;   // measured angle
 double outputPID  = 0.0;   // PID output → motor command
 
-double Kp =25.0;
-double Ki =350;
-double Kd =0.8;
+double Kp =50;
+double Ki =450;
+double Kd =1.3;
 
 
 PID pid(&inputAngle, &outputPID, &setPoint, Kp, Ki, Kd, DIRECT);
