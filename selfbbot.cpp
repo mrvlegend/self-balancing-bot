@@ -208,3 +208,4 @@ void loop() {
 
   delay(3);
 }
+Initial Nano + MPU6050 code
