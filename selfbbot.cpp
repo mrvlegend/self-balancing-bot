@@ -209,3 +209,4 @@ void loop() {
   delay(3);
 }
 Initial Nano + MPU6050 code
+  Add Kalman filter for MPU6050
