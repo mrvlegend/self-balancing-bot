@@ -1,7 +1,7 @@
-Self-Balancing Robot (N20 Bot)
+## Self-Balancing Robot (N20 Bot)
 Initial Arduino Nano code for a 23cm tall, 440g self-balancing robot using MPU6050 IMU, quadrature encoders, L298N motor driver, and PID control. Features complementary filter for angle estimation and 3-second auto-calibration.
 
-Features
+# Features
 Complementary filter (α=0.98) for robust pitch angle estimation
 ​
 
@@ -14,7 +14,7 @@ Auto-calibration during first 3 seconds (hold upright!)
 Deadband filtering and motor deadzone to eliminate jitter
 
 
-Real-time serial debug (angle, PID output, encoder counts)
+# Real-time serial debug (angle, PID output, encoder counts)
 Platform: Arduino Nano
 IMU:     MPU6050 (I²C)
 Motors:  N20 gearmotors (left/right differential drive)
@@ -44,19 +44,19 @@ Encoders → Nano: VCC=5V, GND, A/B channels as above
 L298N → Nano: Input pins as above, motors to OUT1-4
 Power: 7.4V LiPo → L298N VCC/GND (separate logic 5V)
 
-Required Libraries
+# Required Libraries
 Install via Arduino Library Manager:
 MPU6050 by Electronic Cats or jrowberg/i2cdevlib
 ​PID_v1 by Brett Beauregard
 Wire (built-in)
 
-Installation
+# Installation
 
 # Arduino IDE: Sketch → Include Library → Manage Libraries
 # Search/install: "MPU6050", "PID_v1"
 
 
-Tuning Parameters
+# Tuning Parameters
 
 // PID (start here for stability)
 double Kp = 50;   // Proportional (response speed) [30-70]
