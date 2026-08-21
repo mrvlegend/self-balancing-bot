@@ -1,6 +1,6 @@
 ## Self-Balancing Robot (N20 Bot)
 Initial Arduino Nano code for a 23cm tall, 440g self-balancing robot using MPU6050 IMU, quadrature encoders, L298N motor driver, and PID control. Features complementary filter for angle estimation and 3-second auto-calibration.
-https://vlegendbk-png.github.io/mech1/
+
 # Features
 Complementary filter (α=0.98) for robust pitch angle estimation
 ​
